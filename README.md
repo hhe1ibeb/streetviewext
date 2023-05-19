@@ -17,10 +17,15 @@ Then install this module with:
 pip install git+https://github.com/hhe1ibeb/streetviewext
 ```
 
+### API Keys
+Get your Directions and Streetview Imagery APIs from https://developers.google.com/maps/
+
 ## Functions
 
 ### Collect Streetview Photos Among Route
 This functions allows you to collect a batch of photos among a route by entering the origin and destination.
+
+Example Code:
 ```python
 from streetviewext import sv_among_route
 
@@ -30,10 +35,19 @@ sv_among_route(
     mode="driving",
     dir_key=GOOGLEMAPS_DIRECTIONS_KEY,
     street_key=GOOGLEMAPS_STREETVIEW_KEY,
-    save_destination="./test/data", # default to current directory if not specified
+    save_destination="./data", # default to current directory if not specified
     # you can also specify value such as width, height, field of view, or pitch
 )
 ```
 It saves a batch of photos to the destination you specify.
+
+#### Params Specs
+* **origin**: the address of the origin
+* **destination**: the address of the destination
+* **mode**: driving, walking, bicycling, transit, or flight (driving, walking, and bicycling are recommended)
+* **dir_key**: your directions api key, it is recommended to use a .env file to store sensitive data
+* **street_key**: your streetview imagery api key
+* **save_destination**: the directory you wish to save the photos
+
 
 > More Functions Coming Soon!
