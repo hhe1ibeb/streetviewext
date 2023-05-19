@@ -6,6 +6,6 @@ setup(
     description="Extensions for streetview module",
     author="hhe1ibeb",
     author_email="yeelainehou@gmail.com",
-    url="https://github.com/hhe1ibeb/streetview-extension",
+    url="https://github.com/hhe1ibeb/streetviewext",
     packages=["streetviewext"],
 )
