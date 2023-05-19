@@ -9,8 +9,8 @@ setup(
     url="https://github.com/hhe1ibeb/streetviewext",
     packages=["streetviewext"],
     install_requires=[
-        'numpy',
-        'pandas==1.2.3',
-        'matplotlib==3.4.0'
+        "googlemaps",
+        "polyline", 
+        "shapely"
     ],
 )
