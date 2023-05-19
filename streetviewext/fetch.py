@@ -1,4 +1,4 @@
-from calculate_heading import calculate_heading
+from .calculate_heading import calculate_heading
 
 from streetview import search_panoramas
 from streetview import get_streetview
