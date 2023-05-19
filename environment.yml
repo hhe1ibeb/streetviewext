@@ -1,0 +1,12 @@
+---
+name: streetviewext
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11.3
+  - googlemaps
+  - polyline
+  - shapely
