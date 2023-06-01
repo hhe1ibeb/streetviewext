@@ -1,6 +1,6 @@
 # Streetview Extention
 
-This is an module of extensions of [the streetview module by robolyst](https://github.com/robolyst/streetview/tree/v0.0.2).
+This is an module of extensions for [the streetview module by robolyst](https://github.com/robolyst/streetview/tree/v0.0.2).
 The functions allows you to collect streetview photos or panoramas among a route just by entering the origin and destination.
 
 ## Requirements
@@ -36,6 +36,7 @@ sv_among_route(
     dir_key=GOOGLEMAPS_DIRECTIONS_KEY,
     street_key=GOOGLEMAPS_STREETVIEW_KEY,
     save_destination="./data", # default to current directory if not specified
+    save_start_num=2, # default to 1, in this case it'll be "2.jpg", "3.jpg", "4.jpg" ...
     # you can also specify value such as width, height, field of view, or pitch
 )
 ```
@@ -48,6 +49,7 @@ It saves a batch of photos to the destination you specify.
 * **dir_key**: your directions api key, it is recommended to use a .env file to store sensitive data
 * **street_key**: your streetview imagery api key
 * **save_destination**: the directory you wish to save the photos
+* **save_start_num**: the starting index of the filename of the photo
 
 
 > More Functions Coming Soon!
