@@ -35,6 +35,7 @@ def sv_among_route(
     dir_key: str,
     street_key: str,
     save_destination: str = "",
+    save_start_num: int = 1,
     width: int = 640,
     height: int = 640,
     fov: int = 120,
@@ -65,7 +66,7 @@ def sv_among_route(
         image = get_streetview(
             pano.pano_id, street_key, width, height, heading, fov, pitch
         )
-        output_path = "{0}/{1}.jpg".format(save_destination, str(i + 1))
+        output_path = "{0}/{1}.jpg".format(save_destination, str(i + save_start_num))
         image.save(output_path, "jpeg")
     return
 
